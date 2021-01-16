@@ -21,6 +21,8 @@ const checked = JSON.parse(localStorage.getItem("theme"))
     switchToggle.checked ? onDarkTheme() : onLightTheme()
 }
 
+console.log(JSON.parse(localStorage.getItem("theme")));
+
 function onDarkTheme() {
     body.classList.add(Theme.DARK)
     body.classList.remove(Theme.LIGHT)
